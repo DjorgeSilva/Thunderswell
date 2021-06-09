@@ -24,7 +24,8 @@ function App() {
 
     //fonts:
     primaryFont: 'Roboto, sans-serif',
-    secondaryFont: 'Open Sans, sans serif'
+    secondaryFont: 'Open Sans, sans serif',
+    bannerFont: 'Lora, sans serif'
   }
 
   const AuthenticatedRoutes = () => {

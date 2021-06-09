@@ -4,6 +4,8 @@ export const Wrapper = styled.header`
     display: none;
     width: 100%;
     height: 170px;
+    z-index: 1000;
+    position: relative;
 
     @media (min-width: 1000px){
         display: block;
@@ -13,7 +15,6 @@ export const Wrapper = styled.header`
 export const Container = styled.header`
     width: 100%;
     height: 100%;
-    background: black;
 
     .wrapper-contact{
         width: 100%;
@@ -97,7 +98,11 @@ export const Container = styled.header`
 
                     li{
                         .link{
-                            color: #fff;    
+                            color: #fff; 
+                            
+                            &:hover{
+                                color: ${props=> props.theme.hoverColor}
+                            }   
                         }
                     }
                 }

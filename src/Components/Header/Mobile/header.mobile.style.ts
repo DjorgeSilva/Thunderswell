@@ -9,7 +9,8 @@ export const Wrapper = styled.header`
     width: 100%;
     height: 128px;
     background: ${props => props.theme.primaryColor};
-    z-index: 1;
+    z-index: 1000;
+    position: relative;
 
     @media (min-width: 1000px){
         display: none;
