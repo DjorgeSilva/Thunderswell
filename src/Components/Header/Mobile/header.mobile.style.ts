@@ -10,6 +10,10 @@ export const Wrapper = styled.header`
     height: 128px;
     background: ${props => props.theme.primaryColor};
     z-index: 1;
+
+    @media (min-width: 1000px){
+        display: none;
+    }
 `
 
 export const MenuMobile = styled.div`

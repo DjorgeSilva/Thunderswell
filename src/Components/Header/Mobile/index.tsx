@@ -1,10 +1,10 @@
 import React from 'react'
 //style
-import * as s from "./header.style"
+import * as s from "./header.mobile.style"
 //packages
 import { Link } from 'react-router-dom'
 //images
-import logo from "../../img/logo.png"
+import logo from "../../../img/logo.png"
 //icons
 import { IoMenu, IoClose } from "react-icons/io5"
 
@@ -14,7 +14,7 @@ interface Props {
 }
 
 
-export const Header: React.FC<Props> = ({ isOpen, setIsOpen }: Props): JSX.Element => {
+export const HeaderMobile: React.FC<Props> = ({ isOpen, setIsOpen }: Props): JSX.Element => {
 
     const styleLink = {
         textDecoration: "none",

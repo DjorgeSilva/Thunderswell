@@ -5,8 +5,9 @@ import { ThemeProvider } from "styled-components"
 //style
 import { GlobalStyles } from './GlobalStyle/GlobalStyles';
 //components
-import { Header } from './Components/Header';
+import { HeaderMobile } from './Components/Header/Mobile';
 import { Home } from './routes/Home';
+import { HeaderDesktop } from './Components/Header/Desktop';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
   const theme = {
     //colors:
+    whiteColor: "#fff",
     primaryColor: "#1C1C1C",
     defaultColor: "#0D3D66",
     hoverColor: "#F76A40",
@@ -45,7 +47,8 @@ function App() {
 
           <GlobalStyles />
 
-          <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+          <HeaderMobile isOpen={isOpen} setIsOpen={setIsOpen} />
+          <HeaderDesktop/>
 
           <Switch>
             <Route path="/" exact>
